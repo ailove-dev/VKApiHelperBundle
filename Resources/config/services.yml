@@ -1,0 +1,10 @@
+parameters:
+    vk_api_sig_helper.class: Ailove\VKApiHelperBundle\Helper\SigHelper
+    vk_api_helper.class: Ailove\VKApiHelperBundle\Helper\ApiHelper
+
+services:
+    vk_api_sig_helper:
+        class: %vk_api_sig_helper.class%
+    vk_api_helper:
+        class: %vk_api_helper.class%
+        arguments: [ '@vk.oauth.proxy', '@vk.api', '@vk_api_sig_helper' ]

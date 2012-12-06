@@ -1,0 +1,22 @@
+{
+    "name":         "ailove-dev/vk-api-helper-bundle",
+    "description":  "Extended methods for VK php sdk,
+    "keywords":     ["VKontakte", "Symfony2", "VK", "API"],
+    "type":         "symfony-bundle",
+    "homepage":     "https://github.com/ailove-dev/VKApiHelperBundle.git",
+    "authors":      [
+        {
+            "name":      "Ailove"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.1",
+        "ailove-dev/vk-bundle": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Ailove\\VKApiHelperBundle": ""
+        }
+    },
+    "target-dir": "Ailove/VKApiHelperBundle"
+}
