@@ -1,6 +1,6 @@
 {
     "name":         "ailove-dev/vk-api-helper-bundle",
-    "description":  "Extended methods for VK php sdk,
+    "description":  "Extended methods for VK php sdk",
     "keywords":     ["VKontakte", "Symfony2", "VK", "API"],
     "type":         "symfony-bundle",
     "homepage":     "https://github.com/ailove-dev/VKApiHelperBundle.git",
