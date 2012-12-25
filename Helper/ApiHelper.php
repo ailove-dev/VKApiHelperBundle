@@ -19,8 +19,6 @@ class ApiHelper
     protected $vkApi;
     protected $sigHelper;
 
-    protected $clientId;
-    protected $clientSecret;
     protected $vkUid;
     protected $accessToken;
     protected $session;
@@ -41,8 +39,6 @@ class ApiHelper
         if ($oauthProxy->authorize()) {
             $this->vkUid = $oauthProxy->getUserId();
             $this->accessToken = $oauthProxy->getAccessToken();
-            $this->clientId = $oauthProxy->getClientId();
-            $this->clientSecret = $oauthProxy->getClientSecret();
 
             $this->vkApi->setAccessToken($this->accessToken);
             $this->vkApi->setUserId($this->vkUid);
